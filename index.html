@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALC · Álgebra Lineal Computacional — Curso interactivo</title>
+
+<!-- KaTeX local (funciona 100% offline). Si faltara, descomentá el CDN de abajo. -->
+<link rel="stylesheet" href="vendor/katex/dist/katex.min.css">
+<script defer src="vendor/katex/dist/katex.min.js"></script>
+<script defer src="vendor/katex/dist/contrib/auto-render.min.js"></script>
+<!-- Respaldo CDN (requiere internet):
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+-->
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <button id="menuToggle" aria-label="Menú" title="Mostrar/ocultar índice">☰</button>
+    <div class="brand">
+      <span class="logo">Σ</span>
+      <div>
+        <strong>Álgebra Lineal Computacional</strong>
+        <small>Curso interactivo · UBA Exactas</small>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Buscar tema, definición, método…" autocomplete="off">
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+    <div class="topbar-right">
+      <div class="progress-mini" title="Progreso del curso">
+        <div class="progress-mini-bar"><span id="progressFill"></span></div>
+        <span id="progressText">0%</span>
+      </div>
+      <button id="themeToggle" title="Cambiar tema">🌙</button>
+    </div>
+  </header>
+
+  <div id="layout">
+    <nav id="sidebar"><div id="toc"></div></nav>
+    <div id="sidebarBackdrop"></div>
+
+    <main id="main">
+      <article id="lesson"></article>
+      <div id="lessonNav">
+        <button id="prevBtn" class="nav-btn">← Anterior</button>
+        <button id="completeBtn" class="complete-btn">Marcar como visto ✓</button>
+        <button id="nextBtn" class="nav-btn">Siguiente →</button>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Motor de cálculo -->
+<script src="js/linalg.js"></script>
+<!-- Widgets interactivos -->
+<script src="js/widgets.js"></script>
+
+<!-- Contenido (un archivo por capítulo) -->
+<script src="js/content/cap0.js"></script>
+<script src="js/content/cap1.js"></script>
+<script src="js/content/cap2.js"></script>
+<script src="js/content/cap3.js"></script>
+<script src="js/content/cap4.js"></script>
+<script src="js/content/cap5.js"></script>
+<script src="js/content/cap6.js"></script>
+<script src="js/content/cap7.js"></script>
+<script src="js/content/cap8.js"></script>
+
+<!-- App (router + render) -->
+<script src="js/app.js"></script>
+</body>
+</html>
