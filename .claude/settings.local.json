@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(git -C \"/home/tobilaptop/Documents/UBA/3año/alc-app\" config user.name)",
-      "Bash(git init *)"
-    ]
-  }
-}
